@@ -104,7 +104,7 @@ eller fingeravtryck) som en funktion av data av godtycklig storlek.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} \
 	OPTIMIZE="%{rpmcflags}"
 
