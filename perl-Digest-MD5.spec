@@ -86,7 +86,7 @@ RFC 1321 ¤Ç»ØÄê¤µ¤ì¤Æ¤¤¤ë MD5 ¥á¥Ã¥»¡¼¥¸¥À¥¤¥¸¥§¥¹¥È¥¢¥ë¥´¥ê¥º¥à¤Ï¡¢
 
 %description -l pl
 Modu³ "Digest::MD5" umo¿liwia korzystanie z algorytmu skrótów MD5
-firmy RSA Data Security Inc. w programach perlowych. Algoryrm ten
+firmy RSA Data Security Inc. w programach perlowych. Algorytm ten
 pobiera jako dane wej¶ciowe komunikat o dowolnej d³ugo¶ci i tworzy na
 wyj¶ciu 128-bitowy "odcisk palca" lub "skrót" danych wej¶ciowych.
 
