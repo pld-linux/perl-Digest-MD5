@@ -3,7 +3,7 @@ Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
 Version:	2.13
-Release:	1
+Release:	2
 License:	Distributable
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
