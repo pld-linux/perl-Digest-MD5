@@ -2,7 +2,7 @@ Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
 Version:	2.07
-Release:	0.1
+Release:	0.2
 Copyright:	distributable
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
@@ -31,10 +31,9 @@ install -d $RPM_BUILD_ROOT/%{perl_sitearch} \
 	$RPM_BUILD_ROOT%{_mandir}/man3 \
 	$RPM_BUILD_ROOT/%{perl_archlib}
 
-make \
+make install \
 	PREFIX=$RPM_BUILD_ROOT%{_prefix} \
-	INSTALLMAN3DIR=$RPM_BUILD_ROOT%{_mandir}/man3 \
-	install
+	INSTALLMAN3DIR=$RPM_BUILD_ROOT%{_mandir}/man3
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Digest/MD5/
@@ -43,6 +42,8 @@ make \
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/*
+
+strip --strip-unneeded $RPM_BUILD_ROOT%{perl_sitearch}/auto/Digest/*/*.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
