@@ -26,13 +26,13 @@ Modu³ perla wspomagaj±cy algorytm md5.
 
 %build
 perl Makefile.PL
-make OPTIMIZE="$RPM_OPT_FLAGS"
+%{__make} OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/%{perl_archlib}
 
-make install \
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT 
 
 (
