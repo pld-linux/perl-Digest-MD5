@@ -1,12 +1,14 @@
+%include 	/usr/lib/rpm/macros.perl
 Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
 Version:	2.09
-Release:	2
+Release:	3
 Copyright:	distributable
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Digest-MD5-%{version}.tar.gz
+BuildRequires:	rpm-perlprov
 BuildRequires:	perl >= 5.005_03-10
 %requires_eq	perl
 Requires:	%{perl_sitearch}
