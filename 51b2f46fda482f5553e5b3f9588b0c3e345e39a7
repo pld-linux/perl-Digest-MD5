@@ -1,0 +1,4 @@
+- release 4,
+- rebuild against perl 5.6,
+- added using new rpm automation,
+- remove .packlist from %%files.
