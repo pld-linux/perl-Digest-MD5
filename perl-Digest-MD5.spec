@@ -1,12 +1,13 @@
 Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
-Version:	2.07
-Release:	0.2
+Version:	2.09
+Release:	1
 Copyright:	distributable
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Digest-MD5-%{version}.tar.gz
+BuildRequires:	perl >= 5.005_61
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Obsoletes:	perl-MD5
@@ -22,18 +23,15 @@ Modu³ perla wspomagaj±cy algorytm md5.
 %setup -q -n Digest-MD5-%{version}
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" perl Makefile.PL
-make
+perl Makefile.PL
+make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{perl_sitearch} \
-	$RPM_BUILD_ROOT%{_mandir}/man3 \
-	$RPM_BUILD_ROOT/%{perl_archlib}
+install -d $RPM_BUILD_ROOT/%{perl_archlib}
 
 make install \
-	PREFIX=$RPM_BUILD_ROOT%{_prefix} \
-	INSTALLMAN3DIR=$RPM_BUILD_ROOT%{_mandir}/man3
+	DESTDIR=$RPM_BUILD_ROOT 
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Digest/MD5/
