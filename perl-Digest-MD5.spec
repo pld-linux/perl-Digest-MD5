@@ -16,7 +16,7 @@ Summary(is):	Perl skil · RSA Message Digest Algorithm
 Summary(it):	Interfaccia perl per l'algoritmo digest MD5
 Summary(ja):	MD5 •¿•§•∏•ß•π•»•¢•Î•¥•Í•∫•‡§À¬–§π§Î Perl •§•Û•ø°º•’•ß•§•π
 Summary(ko):	MD5 digest æÀ∞Ì∏Æ¡Úø° ¥Î«— ∆ﬁ ¿Œ≈Õ∆‰¿ÃΩ∫
-Summary(no):	En perlmodul som implementerer MD5-algoritmen
+Summary(nb):	En perlmodul som implementerer MD5-algoritmen
 Summary(pl):	Modu≥ Perla Digest::MD5
 Summary(pt):	Uma interface de Perl para o algoritmo de 'digest' MD5
 Summary(pt_BR):	MÛdulo Perl Digest::MD5
