@@ -8,8 +8,8 @@ Copyright:	distributable
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Digest-MD5-%{version}.tar.gz
-BuildRequires:	rpm-perlprov
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Obsoletes:	perl-MD5
