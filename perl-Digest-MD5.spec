@@ -12,8 +12,6 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Digest/Digest-MD5-%{versi
 Patch0:		%{name}-rpmperl-automation-workaround.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl
-%requires_eq	perl
-Requires:	%{perl_sitearch}
 Obsoletes:	perl-MD5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
