@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Digest
 %define	pnam	MD5
-%include 	/usr/lib/rpm/macros.perl
 Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
 Version:	2.16
-Release:	2
-
+Release:	3
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +23,7 @@ Provides access to the md5 algorithm from RSA.
 Modu³ perla wspomagaj±cy algorytm md5.
 
 %prep
-%setup -q -n Digest-MD5-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
