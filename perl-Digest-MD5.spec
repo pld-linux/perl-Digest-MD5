@@ -2,15 +2,16 @@
 Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
-Version:	2.09
-Release:	4
+Version:	2.12
+Release:	1
 Copyright:	distributable
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Digest-MD5-%{version}.tar.gz
+Patch0: %{name}-rpmperl-automation-workaround.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Obsoletes:	perl-MD5
@@ -24,6 +25,7 @@ Modu³ perla wspomagaj±cy algorytm md5.
 
 %prep
 %setup -q -n Digest-MD5-%{version}
+%patch0 -p1
 
 %build
 perl Makefile.PL
