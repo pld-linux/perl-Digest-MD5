@@ -3,13 +3,14 @@ Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
 Version:	2.09
-Release:	3
+Release:	4
 Copyright:	distributable
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Digest-MD5-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Obsoletes:	perl-MD5
@@ -26,7 +27,7 @@ Modu³ perla wspomagaj±cy algorytm md5.
 
 %build
 perl Makefile.PL
-%{__make} OPTIMIZE="$RPM_OPT_FLAGS"
+%{__make} OPTIMIZE="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -34,16 +35,6 @@ install -d $RPM_BUILD_ROOT/%{perl_archlib}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT 
-
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Digest/MD5/
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/*
-
-strip --strip-unneeded $RPM_BUILD_ROOT%{perl_sitearch}/auto/Digest/*/*.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,7 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_sitearch}/auto/Digest/*
 
 %{perl_sitearch}/auto/Digest/*/*.bs
-%{perl_sitearch}/auto/Digest/MD5/.packlist
 %attr(755,root,root) %{perl_sitearch}/auto/Digest/*/*.so
 
 %{_mandir}/man3/*
