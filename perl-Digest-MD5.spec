@@ -1,9 +1,9 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 %define		pnam	MD5
-Summary:	Perl Digest-MD5 module
+Summary:	Perl Digest::MD5 module
 Summary(es):	Modulo Perl Digest
-Summary(pl):	ModuЁ Perla Digest-MD5
+Summary(pl):	ModuЁ Perla Digest::MD5
 Summary(pt_BR):	MСdulo Digest
 Summary(ru):	Алгоритмы генерации "цифровой подписи": MD5, MD2, SHA1 & HMAC
 Summary(uk):	Алгоритми генерац╕╖ "цифрового п╕дпису": MD5, MD2, SHA1 & HMAC
