@@ -2,7 +2,7 @@
 Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
-Version:	2.14
+Version:	2.15
 Release:	1
 License:	Distributable
 Group:		Development/Languages/Perl
@@ -10,7 +10,7 @@ Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Digest/Digest-MD5-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl
+BuildRequires:	perl >= 5.6.1
 Obsoletes:	perl-MD5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
