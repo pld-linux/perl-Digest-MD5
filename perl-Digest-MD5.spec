@@ -3,13 +3,13 @@ Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
 Version:	2.12
-Release:	1
-Copyright:	distributable
+Release:	2
+License:	Distributable
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Digest-MD5-%{version}.tar.gz
-Patch0: %{name}-rpmperl-automation-workaround.patch
+Patch0:		%{name}-rpmperl-automation-workaround.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl
 %requires_eq	perl
@@ -35,8 +35,7 @@ perl Makefile.PL
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/%{perl_archlib}
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT 
+%{__make} install DESTDIR=$RPM_BUILD_ROOT 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -45,10 +44,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{perl_sitearch}/*.pm
 %{perl_sitearch}/Digest
-
 %dir %{perl_sitearch}/auto/Digest
 %dir %{perl_sitearch}/auto/Digest/*
-
 %{perl_sitearch}/auto/Digest/*/*.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Digest/*/*.so
 
