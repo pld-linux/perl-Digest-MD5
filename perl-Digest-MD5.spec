@@ -22,12 +22,12 @@ Summary(sv):	Ett Perl-gränssnitt till kontrollsummealgoritmen MD5
 Summary(uk):	áÌÇÏÒÉÔÍ ÇÅÎÅÒÁÃ¦§ "ÃÉÆÒÏ×ÏÇÏ Ð¦ÄÐÉÓÕ": MD5
 Summary(zh_CN):	Ò»¸öµ½ MD5 Ïû»¯Ëã·¨µÄ perl ½çÃæ¡£
 Name:		perl-Digest-MD5
-Version:	2.27
+Version:	2.29
 Release:	1
-License:	distributable
+License:	Same as Perl itself
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9829a18644d00b043304ebbdd0d014c3
+# Source0-md5:	d791a771105cab0e5252a8e24d092643
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-MD5
@@ -107,6 +107,7 @@ eller fingeravtryck) som en funktion av data av godtycklig storlek.
 	INSTALLDIRS=vendor
 %{__make} \
 	OPTIMIZE="%{rpmcflags}"
+%{__make} test
 
 %install
 rm -rf $RPM_BUILD_ROOT
