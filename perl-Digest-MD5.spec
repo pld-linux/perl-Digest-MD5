@@ -2,8 +2,8 @@
 Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
-Version:	2.12
-Release:	2
+Version:	2.13
+Release:	1
 License:	Distributable
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -42,7 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitearch}/*.pm
 %{perl_sitearch}/Digest
 %dir %{perl_sitearch}/auto/Digest
 %dir %{perl_sitearch}/auto/Digest/*
