@@ -33,7 +33,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-MD5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	"perl(Digest::Perl::MD5)"
+%define		_noautoreq	'perl(Digest::Perl::MD5)'
 
 %description
 Provides access to the MD5 algorithm from RSA.
