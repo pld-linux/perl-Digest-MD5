@@ -22,14 +22,14 @@ Summary(sv):	Ett Perl-gränssnitt till kontrollsummealgoritmen MD5
 Summary(uk):	áÌÇÏÒÉÔÍ ÇÅÎÅÒÁÃ¦§ "ÃÉÆÒÏ×ÏÇÏ Ð¦ÄÐÉÓÕ": MD5
 Summary(zh_CN):	Ò»¸öµ½ MD5 Ïû»¯Ëã·¨µÄ perl ½çÃæ¡£
 Name:		perl-Digest-MD5
-Version:	2.24
+Version:	2.26
 Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1d328e479ac6e7019dd082f6a244a06c
-BuildRequires:	rpm-perlprov >= 4.1-13
+# Source0-md5:	f0bb53c9f59adb63ad3ab88e604a1bd6
 BuildRequires:	perl-devel >= 5.6.1
+BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-MD5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -105,13 +105,15 @@ eller fingeravtryck) som en funktion av data av godtycklig storlek.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor 
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{perl_archlib}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
