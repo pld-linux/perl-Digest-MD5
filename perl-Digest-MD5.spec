@@ -29,7 +29,7 @@ Modu³ perla wspomagaj±cy algorytm md5.
 
 %build
 perl Makefile.PL
-%{__make} OPTIMIZE="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
+%{__make} OPTIMIZE="%{?debug:-O -g}%{!?debug:$RPM_OPT_FLAGS}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
