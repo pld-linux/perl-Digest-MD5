@@ -17,7 +17,7 @@ Summary(it):	Interfaccia perl per l'algoritmo digest MD5
 Summary(ja):	MD5 •¿•§•∏•ß•π•»•¢•Î•¥•Í•∫•‡§À¬–§π§Î Perl •§•Û•ø°º•’•ß•§•π
 Summary(ko):	MD5 digest æÀ∞Ì∏Æ¡Úø° ¥Î«— ∆ﬁ ¿Œ≈Õ∆‰¿ÃΩ∫
 Summary(nb):	En perlmodul som implementerer MD5-algoritmen
-Summary(pl):	Modu≥ Perla Digest::MD5
+Summary(pl):	Interfejs perlowy do algorytmu skrÛtÛw MD5
 Summary(pt):	Uma interface de Perl para o algoritmo de 'digest' MD5
 Summary(pt_BR):	MÛdulo Perl Digest::MD5
 Summary(ru):	·Ã«œ“…‘Õ «≈Œ≈“¡√…… "√…∆“œ◊œ  –œƒ–…”…": MD5
@@ -41,7 +41,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoreq	'perl(Digest::Perl::MD5)'
 
 %description
-Provides access to the MD5 algorithm from RSA.
+The "Digest::MD5" module allows you to use the RSA Data Security Inc.
+MD5 Message Digest algorithm from within Perl programs.  The algorithm
+takes as input a message of arbitrary length and produces as output a
+128-bit "fingerprint" or "message digest" of the input.
 
 %description -l cs
 BalÌËek perl-Digest-MD5 obsahuje modul pro Perl, kter˝ implementuje
@@ -82,7 +85,10 @@ RFC 1321 §«ªÿƒÍ§µ§Ï§∆§§§Î MD5 •·•√•ª°º•∏•¿•§•∏•ß•π•»•¢•Î•¥•Í•∫•‡§œ°¢
 §ﬁ§π) §Ú«§∞’•µ•§•∫§Œ•«°º•ø§Œ¥ÿøÙ§»§∑§∆∑◊ªª§π§Î ˝À°§«§π°£
 
 %description -l pl
-Modu≥ perla wspomagaj±cy algorytm MD5.
+Modu≥ "Digest::MD5" umoøliwia korzystanie z algorytmu skrÛtÛw MD5
+firmy RSA Data Security Inc. w programach perlowych. Algoryrm ten
+pobiera jako dane wej∂ciowe komunikat o dowolnej d≥ugo∂ci i tworzy na
+wyj∂ciu 128-bitowy "odcisk palca" lub "skrÛt" danych wej∂ciowych.
 
 %description -l pt
 O algoritmo de an·lise de mensagens de MD5, especificado no RFC 1321,
