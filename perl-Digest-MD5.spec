@@ -22,7 +22,7 @@ Summary(sv):	Ett Perl-grДnssnitt till kontrollsummealgoritmen MD5
 Summary(uk):	Алгоритм генерац╕╖ "цифрового п╕дпису": MD5
 Summary(zh_CN):	р╩╦Ж╣╫ MD5 оШ╩╞кЦ╥╗╣д perl ╫ГцФ║ё
 Name:		perl-Digest-MD5
-Version:	2.23
+Version:	2.24
 Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
