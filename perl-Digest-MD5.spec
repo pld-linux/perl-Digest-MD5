@@ -5,7 +5,7 @@ Summary:	Perl Digest-MD5 module
 Summary(pl):	Modu³ Perla Digest-MD5
 Name:		perl-Digest-MD5
 Version:	2.20
-Release:	1
+Release:	2
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -31,7 +31,7 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{perl_archlib}
+install -d $RPM_BUILD_ROOT%{perl_archlib}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT 
 
@@ -40,8 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitearch}/Digest
-%dir %{perl_sitearch}/auto/Digest
+%{perl_sitearch}/Digest/*
 %dir %{perl_sitearch}/auto/Digest/*
 %{perl_sitearch}/auto/Digest/*/*.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Digest/*/*.so
