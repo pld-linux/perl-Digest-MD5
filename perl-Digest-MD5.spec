@@ -23,11 +23,11 @@ Summary(uk):	áÌÇÏÒÉÔÍ ÇÅÎÅÒÁÃ¦§ "ÃÉÆÒÏ×ÏÇÏ Ð¦ÄÐÉÓÕ": MD5
 Summary(zh_CN):	Ò»¸öµ½ MD5 Ïû»¯Ëã·¨µÄ perl ½çÃæ¡£
 Name:		perl-Digest-MD5
 Version:	2.23
-Release:	1
+Release:	2
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6.1
 Obsoletes:	perl-MD5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -102,7 +102,8 @@ eller fingeravtryck) som en funktion av data av godtycklig storlek.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -116,9 +117,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitearch}/Digest/*
-%dir %{perl_sitearch}/auto/Digest/*
-%{perl_sitearch}/auto/Digest/*/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Digest/*/*.so
+%{perl_vendorarch}/Digest/*
+%dir %{perl_vendorarch}/auto/Digest/*
+%{perl_vendorarch}/auto/Digest/*/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Digest/*/*.so
 
 %{_mandir}/man3/*
