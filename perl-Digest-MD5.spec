@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 %define		pnam	MD5
@@ -24,7 +28,8 @@ Summary(zh_CN):	一个到 MD5 消化算法的 perl 界面。
 Name:		perl-Digest-MD5
 Version:	2.29
 Release:	1
-License:	Same as Perl itself
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d791a771105cab0e5252a8e24d092643
@@ -107,7 +112,8 @@ eller fingeravtryck) som en funktion av data av godtycklig storlek.
 	INSTALLDIRS=vendor
 %{__make} \
 	OPTIMIZE="%{rpmcflags}"
-%{__make} test
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -125,5 +131,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Digest/*
 %{perl_vendorarch}/auto/Digest/*/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Digest/*/*.so
-
 %{_mandir}/man3/*
