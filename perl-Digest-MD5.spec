@@ -9,11 +9,12 @@ Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Digest/Digest-MD5-%{version}.tar.gz
-Patch0:		%{name}-rpmperl-automation-workaround.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl
 Obsoletes:	perl-MD5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreq	"perl(Digest::Perl::MD5)"
 
 %description
 Provides access to the md5 algorithm from RSA.
@@ -23,7 +24,6 @@ Modu³ perla wspomagaj±cy algorytm md5.
 
 %prep
 %setup -q -n Digest-MD5-%{version}
-%patch0 -p1
 
 %build
 perl Makefile.PL
