@@ -27,7 +27,7 @@ Summary(uk):	Алгоритм генерац╕╖ "цифрового п╕дпису": MD5
 Summary(zh_CN):	р╩╦Ж╣╫ MD5 оШ╩╞кЦ╥╗╣д perl ╫ГцФ║ё
 Name:		perl-Digest-MD5
 Version:	2.33
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
