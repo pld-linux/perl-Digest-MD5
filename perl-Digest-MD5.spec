@@ -26,13 +26,13 @@ Summary(sv):	Ett Perl-gränssnitt till kontrollsummealgoritmen MD5
 Summary(uk):	áÌÇÏÒÉÔÍ ÇÅÎÅÒÁÃ¦§ "ÃÉÆÒÏ×ÏÇÏ Ð¦ÄÐÉÓÕ": MD5
 Summary(zh_CN):	Ò»¸öµ½ MD5 Ïû»¯Ëã·¨µÄ perl ½çÃæ¡£
 Name:		perl-Digest-MD5
-Version:	2.33
-Release:	2
+Version:	2.36
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f9631d075f271f44cdfadf6b3dfa8b38
+# Source0-md5:	7f7996176c3008a1720a9984e94553ed
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-MD5
