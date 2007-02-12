@@ -6,25 +6,25 @@
 %define		pdir	Digest
 %define		pnam	MD5
 Summary:	A perl interface to the MD5 digest algorithm
-Summary(cs):	Rozhraní s podporou algoritmu MD5 v Perlu
-Summary(da):	En perlmodul som implementerer MD5-algoritmen
-Summary(de):	Ein Perl-Interface zum MD5 Digest-Algorithmus
-Summary(es):	Interfaz perl para el algoritmo MD5 digest
-Summary(fr):	Interface perl pour l'algorithme digest MD5
-Summary(id):	Antarmuka Perl ke MD5 Digest Algorithm RSA
-Summary(is):	Perl skil á RSA Message Digest Algorithm
-Summary(it):	Interfaccia perl per l'algoritmo digest MD5
-Summary(ja):	MD5 ¥À¥¤¥¸¥§¥¹¥È¥¢¥ë¥´¥ê¥º¥à¤ËÂĞ¤¹¤ë Perl ¥¤¥ó¥¿¡¼¥Õ¥§¥¤¥¹
-Summary(ko):	MD5 digest ¾Ë°í¸®Áò¿¡ ´ëÇÑ ÆŞ ÀÎÅÍÆäÀÌ½º
-Summary(nb):	En perlmodul som implementerer MD5-algoritmen
-Summary(pl):	Interfejs perlowy do algorytmu skrótów MD5
-Summary(pt):	Uma interface de Perl para o algoritmo de 'digest' MD5
-Summary(pt_BR):	Módulo Perl Digest::MD5
-Summary(ru):	áÌÇÏÒÉÔÍ ÇÅÎÅÒÁÃÉÉ "ÃÉÆÒÏ×ÏÊ ĞÏÄĞÉÓÉ": MD5
-Summary(sk):	Perl rozhranie k RSA MD5 Digest Algorithm
-Summary(sv):	Ett Perl-gränssnitt till kontrollsummealgoritmen MD5
-Summary(uk):	áÌÇÏÒÉÔÍ ÇÅÎÅÒÁÃ¦§ "ÃÉÆÒÏ×ÏÇÏ Ğ¦ÄĞÉÓÕ": MD5
-Summary(zh_CN):	Ò»¸öµ½ MD5 Ïû»¯Ëã·¨µÄ perl ½çÃæ¡£
+Summary(cs.UTF-8):   RozhranÃ­ s podporou algoritmu MD5 v Perlu
+Summary(da.UTF-8):   En perlmodul som implementerer MD5-algoritmen
+Summary(de.UTF-8):   Ein Perl-Interface zum MD5 Digest-Algorithmus
+Summary(es.UTF-8):   Interfaz perl para el algoritmo MD5 digest
+Summary(fr.UTF-8):   Interface perl pour l'algorithme digest MD5
+Summary(id.UTF-8):   Antarmuka Perl ke MD5 Digest Algorithm RSA
+Summary(is.UTF-8):   Perl skil Ã¡ RSA Message Digest Algorithm
+Summary(it.UTF-8):   Interfaccia perl per l'algoritmo digest MD5
+Summary(ja.UTF-8):   MD5 ãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ ã«å¯¾ã™ã‚‹ Perl ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ã‚¤ã‚¹
+Summary(ko.UTF-8):   MD5 digest ì•Œê³ ë¦¬ì¦˜ì— ëŒ€í•œ í„ ì¸í„°í˜ì´ìŠ¤
+Summary(nb.UTF-8):   En perlmodul som implementerer MD5-algoritmen
+Summary(pl.UTF-8):   Interfejs perlowy do algorytmu skrÃ³tÃ³w MD5
+Summary(pt.UTF-8):   Uma interface de Perl para o algoritmo de 'digest' MD5
+Summary(pt_BR.UTF-8):   MÃ³dulo Perl Digest::MD5
+Summary(ru.UTF-8):   ĞĞ»Ğ³Ğ¾Ñ€Ğ¸Ñ‚Ğ¼ Ğ³ĞµĞ½ĞµÑ€Ğ°Ñ†Ğ¸Ğ¸ "Ñ†Ğ¸Ñ„Ñ€Ğ¾Ğ²Ğ¾Ğ¹ Ğ¿Ğ¾Ğ´Ğ¿Ğ¸ÑĞ¸": MD5
+Summary(sk.UTF-8):   Perl rozhranie k RSA MD5 Digest Algorithm
+Summary(sv.UTF-8):   Ett Perl-grÃ¤nssnitt till kontrollsummealgoritmen MD5
+Summary(uk.UTF-8):   ĞĞ»Ğ³Ğ¾Ñ€Ğ¸Ñ‚Ğ¼ Ğ³ĞµĞ½ĞµÑ€Ğ°Ñ†Ñ–Ñ— "Ñ†Ğ¸Ñ„Ñ€Ğ¾Ğ²Ğ¾Ğ³Ğ¾ Ğ¿Ñ–Ğ´Ğ¿Ğ¸ÑÑƒ": MD5
+Summary(zh_CN.UTF-8):   ä¸€ä¸ªåˆ° MD5 æ¶ˆåŒ–ç®—æ³•çš„ perl ç•Œé¢ã€‚
 Name:		perl-Digest-MD5
 Version:	2.36
 Release:	1
@@ -46,69 +46,69 @@ MD5 Message Digest algorithm from within Perl programs.  The algorithm
 takes as input a message of arbitrary length and produces as output a
 128-bit "fingerprint" or "message digest" of the input.
 
-%description -l cs
-Balíèek perl-Digest-MD5 obsahuje modul pro Perl, kterı implementuje
-algoritmus pro vıpoèet vıtahu MD5 (RFC 1321, 128 bitová hodnota, známá
+%description -l cs.UTF-8
+BalÃ­Äek perl-Digest-MD5 obsahuje modul pro Perl, kterÃ½ implementuje
+algoritmus pro vÃ½poÄet vÃ½tahu MD5 (RFC 1321, 128 bitovÃ¡ hodnota, znÃ¡mÃ¡
 jako digest nebo fingerprint).
 
-%description -l da
+%description -l da.UTF-8
 Kontrollsummealgoritmen MD5, specificeret i RFC 1321, er en metod for
-at beregna et relativt unikt 128-bitars værdi (kallas kontrollsumma
-eller fingeravtryck) som en funktion af data af godtycklig størrelse.
+at beregna et relativt unikt 128-bitars vÃ¦rdi (kallas kontrollsumma
+eller fingeravtryck) som en funktion af data af godtycklig stÃ¸rrelse.
 
-%description -l de
+%description -l de.UTF-8
 Der MD5 Message Digest Algorithmus, der in RFC 1321 angegeben ist,
-stellt eine Rechenmethode für relativ eindeutige 128-bit Werte
+stellt eine Rechenmethode fÃ¼r relativ eindeutige 128-bit Werte
 (bekannt als digest oder fingerprint) als Funktion von Daten einer
-arbiträren Größe dar.
+arbitrÃ¤ren GrÃ¶ÃŸe dar.
 
-%description -l es
+%description -l es.UTF-8
 El algoritmo MD5 message digest, especificado en el RFC 1321, es un
-método para obtener un valor de 128-bits relativamente único (conocido
-como digest, o huella) como una función de datos de tamaño arbotrario.
+mÃ©todo para obtener un valor de 128-bits relativamente Ãºnico (conocido
+como digest, o huella) como una funciÃ³n de datos de tamaÃ±o arbotrario.
 
-%description -l fr
-L'algorithme digest de message MD5, spécifié sous RFC 1321, est une
-méthode de traitement d'une valeur 128 bits relativement unique
+%description -l fr.UTF-8
+L'algorithme digest de message MD5, spÃ©cifiÃ© sous RFC 1321, est une
+mÃ©thode de traitement d'une valeur 128 bits relativement unique
 (connue sous le nom de digest ou d'empreinte digitale) en tant que
-fonction de données d'une taille arbitraire.
+fonction de donnÃ©es d'une taille arbitraire.
 
-%description -l it
+%description -l it.UTF-8
 L'algoritmo MD5 per il calcolo del message digest, specificato in RFC
-1321, è un metodo per calcolare un valore lungo 128-bit relativamente
+1321, Ã¨ un metodo per calcolare un valore lungo 128-bit relativamente
 unico (conosciuto come digest o fingerprint) come una funzione di dati
 di dimensioni arbitrarie.
 
-%description -l ja
-RFC 1321 ¤Ç»ØÄê¤µ¤ì¤Æ¤¤¤ë MD5 ¥á¥Ã¥»¡¼¥¸¥À¥¤¥¸¥§¥¹¥È¥¢¥ë¥´¥ê¥º¥à¤Ï¡¢
-Èæ³ÓÅª°ì°Õ¤Ê 128 ¥Ó¥Ã¥ÈÃÍ (¥À¥¤¥¸¥§¥¹¥È¤Ş¤¿¤Ï¥Õ¥£¥ó¥¬¡¼¥×¥ê¥ó¥È¤È¸À¤¤
-¤Ş¤¹) ¤òÇ¤°Õ¥µ¥¤¥º¤Î¥Ç¡¼¥¿¤Î´Ø¿ô¤È¤·¤Æ·×»»¤¹¤ëÊıË¡¤Ç¤¹¡£
+%description -l ja.UTF-8
+RFC 1321 ã§æŒ‡å®šã•ã‚Œã¦ã„ã‚‹ MD5 ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ ã¯ã€
+æ¯”è¼ƒçš„ä¸€æ„ãª 128 ãƒ“ãƒƒãƒˆå€¤ (ãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆã¾ãŸã¯ãƒ•ã‚£ãƒ³ã‚¬ãƒ¼ãƒ—ãƒªãƒ³ãƒˆã¨è¨€ã„
+ã¾ã™) ã‚’ä»»æ„ã‚µã‚¤ã‚ºã®ãƒ‡ãƒ¼ã‚¿ã®é–¢æ•°ã¨ã—ã¦è¨ˆç®—ã™ã‚‹æ–¹æ³•ã§ã™ã€‚
 
-%description -l pl
-Modu³ "Digest::MD5" umo¿liwia korzystanie z algorytmu skrótów MD5
+%description -l pl.UTF-8
+ModuÅ‚ "Digest::MD5" umoÅ¼liwia korzystanie z algorytmu skrÃ³tÃ³w MD5
 firmy RSA Data Security Inc. w programach perlowych. Algorytm ten
-pobiera jako dane wej¶ciowe komunikat o dowolnej d³ugo¶ci i tworzy na
-wyj¶ciu 128-bitowy "odcisk palca" lub "skrót" danych wej¶ciowych.
+pobiera jako dane wejÅ›ciowe komunikat o dowolnej dÅ‚ugoÅ›ci i tworzy na
+wyjÅ›ciu 128-bitowy "odcisk palca" lub "skrÃ³t" danych wejÅ›ciowych.
 
-%description -l pt
-O algoritmo de análise de mensagens de MD5, especificado no RFC 1321,
-é um método para calcular um valor de 128 bits relativamente único
-(conhecido por 'digest' ou impressão digital) em função de um conjunto
-de dados de tamanho arbitrário.
+%description -l pt.UTF-8
+O algoritmo de anÃ¡lise de mensagens de MD5, especificado no RFC 1321,
+Ã© um mÃ©todo para calcular um valor de 128 bits relativamente Ãºnico
+(conhecido por 'digest' ou impressÃ£o digital) em funÃ§Ã£o de um conjunto
+de dados de tamanho arbitrÃ¡rio.
 
-%description -l pt_BR
-Módulo Perl Digest::MD5 - Extensão para os algoritmos MD5.
+%description -l pt_BR.UTF-8
+MÃ³dulo Perl Digest::MD5 - ExtensÃ£o para os algoritmos MD5.
 
-%description -l ru
-óÏÄÅÒÖÉÔ ÍÏÄÕÌØ ÄÌÑ ĞÏÄÓŞÅÔÁ ÃÉÆÒÏ×OJ PODPISI MD5.
+%description -l ru.UTF-8
+Ğ¡Ğ¾Ğ´ĞµÑ€Ğ¶Ğ¸Ñ‚ Ğ¼Ğ¾Ğ´ÑƒĞ»ÑŒ Ğ´Ğ»Ñ Ğ¿Ğ¾Ğ´ÑÑ‡ĞµÑ‚Ğ° Ñ†Ğ¸Ñ„Ñ€Ğ¾Ğ²OJ PODPISI MD5.
 
-%description -l sv
-Kontrollsummealgoritmen MD5, specificerad i RFC 1321, är en metod för
-att beräkna ett relativt unikt 128-bitars värde (kallas kontrollsumma
+%description -l sv.UTF-8
+Kontrollsummealgoritmen MD5, specificerad i RFC 1321, Ã¤r en metod fÃ¶r
+att berÃ¤kna ett relativt unikt 128-bitars vÃ¤rde (kallas kontrollsumma
 eller fingeravtryck) som en funktion av data av godtycklig storlek.
 
-%description -l uk
-í¦ÓÔÉÔØ ÍÏÄÕÌØ ÄÌÑ Ğ¦ÄÒÁÈÕÎËÕ ÃÉÆÒÏ×OGO P&DPISU MD5.
+%description -l uk.UTF-8
+ĞœÑ–ÑÑ‚Ğ¸Ñ‚ÑŒ Ğ¼Ğ¾Ğ´ÑƒĞ»ÑŒ Ğ´Ğ»Ñ Ğ¿Ñ–Ğ´Ñ€Ğ°Ñ…ÑƒĞ½ĞºÑƒ Ñ†Ğ¸Ñ„Ñ€Ğ¾Ğ²OGO P&DPISU MD5.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
