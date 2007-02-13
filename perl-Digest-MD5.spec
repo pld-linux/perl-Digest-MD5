@@ -6,25 +6,25 @@
 %define		pdir	Digest
 %define		pnam	MD5
 Summary:	A perl interface to the MD5 digest algorithm
-Summary(cs.UTF-8):   Rozhraní s podporou algoritmu MD5 v Perlu
-Summary(da.UTF-8):   En perlmodul som implementerer MD5-algoritmen
-Summary(de.UTF-8):   Ein Perl-Interface zum MD5 Digest-Algorithmus
-Summary(es.UTF-8):   Interfaz perl para el algoritmo MD5 digest
-Summary(fr.UTF-8):   Interface perl pour l'algorithme digest MD5
-Summary(id.UTF-8):   Antarmuka Perl ke MD5 Digest Algorithm RSA
-Summary(is.UTF-8):   Perl skil á RSA Message Digest Algorithm
-Summary(it.UTF-8):   Interfaccia perl per l'algoritmo digest MD5
-Summary(ja.UTF-8):   MD5 ダイジェストアルゴリズムに対する Perl インターフェイス
-Summary(ko.UTF-8):   MD5 digest 알고리즘에 대한 펄 인터페이스
-Summary(nb.UTF-8):   En perlmodul som implementerer MD5-algoritmen
-Summary(pl.UTF-8):   Interfejs perlowy do algorytmu skrótów MD5
-Summary(pt.UTF-8):   Uma interface de Perl para o algoritmo de 'digest' MD5
-Summary(pt_BR.UTF-8):   Módulo Perl Digest::MD5
-Summary(ru.UTF-8):   Алгоритм генерации "цифровой подписи": MD5
-Summary(sk.UTF-8):   Perl rozhranie k RSA MD5 Digest Algorithm
-Summary(sv.UTF-8):   Ett Perl-gränssnitt till kontrollsummealgoritmen MD5
-Summary(uk.UTF-8):   Алгоритм генерації "цифрового підпису": MD5
-Summary(zh_CN.UTF-8):   一个到 MD5 消化算法的 perl 界面。
+Summary(cs.UTF-8):	Rozhraní s podporou algoritmu MD5 v Perlu
+Summary(da.UTF-8):	En perlmodul som implementerer MD5-algoritmen
+Summary(de.UTF-8):	Ein Perl-Interface zum MD5 Digest-Algorithmus
+Summary(es.UTF-8):	Interfaz perl para el algoritmo MD5 digest
+Summary(fr.UTF-8):	Interface perl pour l'algorithme digest MD5
+Summary(id.UTF-8):	Antarmuka Perl ke MD5 Digest Algorithm RSA
+Summary(is.UTF-8):	Perl skil á RSA Message Digest Algorithm
+Summary(it.UTF-8):	Interfaccia perl per l'algoritmo digest MD5
+Summary(ja.UTF-8):	MD5 ダイジェストアルゴリズムに対する Perl インターフェイス
+Summary(ko.UTF-8):	MD5 digest 알고리즘에 대한 펄 인터페이스
+Summary(nb.UTF-8):	En perlmodul som implementerer MD5-algoritmen
+Summary(pl.UTF-8):	Interfejs perlowy do algorytmu skrótów MD5
+Summary(pt.UTF-8):	Uma interface de Perl para o algoritmo de 'digest' MD5
+Summary(pt_BR.UTF-8):	Módulo Perl Digest::MD5
+Summary(ru.UTF-8):	Алгоритм генерации "цифровой подписи": MD5
+Summary(sk.UTF-8):	Perl rozhranie k RSA MD5 Digest Algorithm
+Summary(sv.UTF-8):	Ett Perl-gränssnitt till kontrollsummealgoritmen MD5
+Summary(uk.UTF-8):	Алгоритм генерації "цифрового підпису": MD5
+Summary(zh_CN.UTF-8):	一个到 MD5 消化算法的 perl 界面。
 Name:		perl-Digest-MD5
 Version:	2.36
 Release:	1
