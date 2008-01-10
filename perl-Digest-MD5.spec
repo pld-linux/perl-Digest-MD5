@@ -117,6 +117,7 @@ eller fingeravtryck) som en funktion av data av godtycklig storlek.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
