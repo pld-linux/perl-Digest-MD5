@@ -17,7 +17,7 @@ Summary(it.UTF-8):	Interfaccia perl per l'algoritmo digest MD5
 Summary(ja.UTF-8):	MD5 ダイジェストアルゴリズムに対する Perl インターフェイス
 Summary(ko.UTF-8):	MD5 digest 알고리즘에 대한 펄 인터페이스
 Summary(nb.UTF-8):	En perlmodul som implementerer MD5-algoritmen
-Summary(pl.UTF-8):	Interfejs perlowy do algorytmu skrótów MD5
+Summary(pl.UTF-8):	Interfejs perlowy do algorytmu skrótu MD5
 Summary(pt.UTF-8):	Uma interface de Perl para o algoritmo de 'digest' MD5
 Summary(pt_BR.UTF-8):	Módulo Perl Digest::MD5
 Summary(ru.UTF-8):	Алгоритм генерации "цифровой подписи": MD5
@@ -31,8 +31,9 @@ Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Digest/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7f7996176c3008a1720a9984e94553ed
+URL:		http://search.cpan.org/dist/Digest-MD5/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-MD5
@@ -85,10 +86,10 @@ RFC 1321 で指定されている MD5 メッセージダイジェストアルゴ
 ます) を任意サイズのデータの関数として計算する方法です。
 
 %description -l pl.UTF-8
-Moduł "Digest::MD5" umożliwia korzystanie z algorytmu skrótów MD5
-firmy RSA Data Security Inc. w programach perlowych. Algorytm ten
-pobiera jako dane wejściowe komunikat o dowolnej długości i tworzy na
-wyjściu 128-bitowy "odcisk palca" lub "skrót" danych wejściowych.
+Moduł "Digest::MD5" umożliwia korzystanie z algorytmu skrótu MD5 firmy
+RSA Data Security Inc. w programach perlowych. Algorytm ten pobiera
+jako dane wejściowe komunikat o dowolnej długości i tworzy na wyjściu
+128-bitowy "odcisk palca" lub "skrót" danych wejściowych.
 
 %description -l pt.UTF-8
 O algoritmo de análise de mensagens de MD5, especificado no RFC 1321,
