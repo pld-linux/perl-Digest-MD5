@@ -26,13 +26,13 @@ Summary(sv.UTF-8):	Ett Perl-gränssnitt till kontrollsummealgoritmen MD5
 Summary(uk.UTF-8):	Алгоритм генерації "цифрового підпису": MD5
 Summary(zh_CN.UTF-8):	一个到 MD5 消化算法的 perl 界面。
 Name:		perl-Digest-MD5
-Version:	2.36
-Release:	3
+Version:	2.38
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Digest/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7f7996176c3008a1720a9984e94553ed
+# Source0-md5:	18265a99998be39deaf74441cbff69ea
 URL:		http://search.cpan.org/dist/Digest-MD5/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
