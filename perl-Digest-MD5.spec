@@ -34,6 +34,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Digest/GAAS/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	73967d50b9d19990a1d609fe2b1e36c3
 URL:		http://search.cpan.org/dist/Digest-MD5/
+%{?with_tests:BuildRequires:	perl-Encode}
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-MD5
