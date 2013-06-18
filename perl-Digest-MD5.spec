@@ -31,16 +31,17 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Digest/GAAS/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Digest/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	889274cafa59a42a5a9704d8270f856b
 URL:		http://search.cpan.org/dist/Digest-MD5/
 %{?with_tests:BuildRequires:	perl-Encode}
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.663
 Obsoletes:	perl-MD5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'perl(Digest::Perl::MD5)'
+%define		_noautoreq_perl		Digest::Perl::MD5
 
 %description
 The "Digest::MD5" module allows you to use the RSA Data Security Inc.
@@ -126,7 +127,6 @@ eller fingeravtryck) som en funktion av data av godtycklig storlek.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{perl_archlib}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -136,8 +136,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorarch}/Digest/*
-%dir %{perl_vendorarch}/auto/Digest/*
-%{perl_vendorarch}/auto/Digest/*/*.bs
-%attr(755,root,root) %{perl_vendorarch}/auto/Digest/*/*.so
-%{_mandir}/man3/*
+%{perl_vendorarch}/Digest/MD5.pm
+%dir %{perl_vendorarch}/auto/Digest/MD5
+%{perl_vendorarch}/auto/Digest/MD5/MD5.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Digest/MD5/MD5.so
+%{_mandir}/man3/Digest::MD5.3pm*
