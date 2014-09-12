@@ -138,6 +138,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{perl_vendorarch}/Digest/MD5.pm
 %dir %{perl_vendorarch}/auto/Digest/MD5
-%{perl_vendorarch}/auto/Digest/MD5/MD5.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Digest/MD5/MD5.so
 %{_mandir}/man3/Digest::MD5.3pm*
