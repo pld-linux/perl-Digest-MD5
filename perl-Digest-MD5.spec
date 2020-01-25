@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 %define		pnam	MD5
 Summary:	A perl interface to the MD5 digest algorithm
